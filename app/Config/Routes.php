@@ -32,7 +32,7 @@ $routes->set404Override();
 $routes->get('/', 'C_Home::index');
 $routes->get('/cart', 'C_Home::cart');
 $routes->post('/add_to_cart', 'C_Home::add_to_cart');
-$routes->post('/delete_product_in_cart', 'C_Home::delete_product_in_cart/$1');
+$routes->post('/delete_product_in_cart', 'C_Home::delete_product_in_cart');
 
 
 $routes->get('/admin/dashboard', 'C_Admin::index');

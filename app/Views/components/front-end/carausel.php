@@ -18,7 +18,7 @@
                     <div class="col-md-6 col-xl-4 col-xxl-4 offset-md-2 offset-xxl-0 bounce animated" style="margin-right: 50px;">
                         <div style="max-width: 350px;">
                             <h2 class="text-uppercase fw-bold">Experience comfort like never before with our premium range of shoes</h2>
-                            <p class="my-3">Rasakan kenyamanan yang belum pernah ada sebelumnya dengan rangkaian sepatu premium kami.</p><a class="btn btn-primary border rounded me-2" role="button" href="#products">Button</a>
+                            <p class="my-3">Rasakan kenyamanan yang belum pernah ada sebelumnya dengan rangkaian sepatu premium kami.</p><a class="btn btn-primary border rounded me-2" role="button" href="#products">Shopping</a>
                         </div>
                     </div>
                 </div>

@@ -60,6 +60,43 @@
                             </div>
                         </div>
                     <?php endforeach; ?>
+
+                    <div class="col-md-12 mt-5">
+                        <div class="card border rounded shadow">
+                            <div class="card-body d-flex align-items-start justify-content-lg-start align-items-lg-start">
+                                <div class="table-responsive text-start" style="margin-left: 11px;">
+                                    <!-- header sub total -->
+                                    <table class="table table-sm">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="2">Total Harga</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <?php
+                                            // cek product pada session dan totalkan harga semuanya
+                                            $total = 0;
+                                            foreach (session('cart') as $item) {
+                                                $total += $item['price'] * $item['qty'];
+                                            }
+
+                                            ?>
+                                            <tr>
+                                                <td>Sub Total</td>
+                                                <td>Rp<?= number_format($total, 0, ',', '.') ?></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <?php
+                                    // echo '<pre>';
+                                    // print_r(session('cart'));
+                                    // echo '</pre>';
+                                    ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 <?php } else { ?>
                     <p class="text-center">Keranjang Kosong</p>
                 <?php } ?>
