@@ -2,11 +2,11 @@
 
 namespace App\Controllers;
 
-class Home extends BaseController
+class C_Admin extends BaseController
 {
     public function index()
     {
-        return $this->render('welcome', [
+        return $this->render('admin/index', [
             'title' => 'Home',
         ]);
     }
