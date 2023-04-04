@@ -8,7 +8,7 @@ class Barang extends Model
 {
     protected $DBGroup          = 'default';
     protected $table            = 'barang';
-    protected $primaryKey       = 'id';
+    protected $primaryKey       = 'id_barang';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
